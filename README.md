@@ -1,55 +1,50 @@
-# React + TypeScript + Vite
+# 🎵 Music Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このプロジェクトは、React、TypeScript、Vite、Tailwind CSS を使用して構築されたシンプルな音楽プレイヤーアプリケーションです。
 
-Currently, two official plugins are available:
+## 🚀 使用技術
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## 📦 セットアップ方法
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. リポジトリをクローンします：
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone https://github.com/takeru0076/music-player.git
+   cd music-player
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. 依存関係をインストールします：
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ``` bash
+    npm install
+    ```
+3. 開発サーバーを起動します：
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# music-player
+    ``` bash
+    npm run dev
+    ブラウザで http://localhost:5173 にアクセスして、アプリケーションを確認できます。
+    ```
+
+## 📁 ディレクトリ構成
+
+music-player/
+
+├── public/ # 静的ファイル
+
+├── src/ # アプリケーションのソースコード
+
+│ └── ... # 各種コンポーネントやロジック
+
+├── index.html # エントリーポイントのHTMLファイル
+
+├── package.json # プロジェクトの依存関係とスクリプト
+
+├── tailwind.config.js # Tailwind CSS の設定
+
+└── vite.config.ts # Vite のビルド設定
+s
